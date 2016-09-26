@@ -89,11 +89,16 @@ int main(void)
     HAL_GPIO_WritePin(GPIOE, LD3_Pin, buttonPressed ? GPIO_PIN_SET : GPIO_PIN_RESET);
     
     if (buttonPressed && !buttonWasPressed)
-      //USB_Send_Key_Press(4 /* 'A' */, 0);
-      USB_Send_Key_Press(4, 0);
+    {
+      USB_Send_Key_Press(0x0B, 0);
+      HAL_Delay(50);
+    }
     else if (!buttonPressed && buttonWasPressed)
+    {
       USB_Send_All_Keys_Released();
-    
+      HAL_Delay(50);
+    }
+   
     buttonWasPressed = buttonPressed;
   }
 
