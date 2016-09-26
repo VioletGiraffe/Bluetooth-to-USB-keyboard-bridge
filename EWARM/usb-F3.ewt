@@ -1181,7 +1181,7 @@
         <name>$PROJ_DIR$\..\Src\usb_device.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Src\usb_keyboard.h</name>
+        <name>$PROJ_DIR$\..\Inc\usb_keyboard.h</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Src\usbd_conf.c</name>
@@ -1248,6 +1248,12 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_uart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_uart_ex.c</name>
       </file>
     </group>
   </group>

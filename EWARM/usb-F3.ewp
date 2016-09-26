@@ -55,7 +55,7 @@
         </option>
         <option>
           <name>OGCoreOrChip</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>GRuntimeLibSelect</name>
@@ -89,7 +89,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>Default	None</state>
+          <state>STM32F303VC	ST STM32F303VC</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -149,17 +149,17 @@
         </option>
         <option>
           <name>GFPUDeviceSlave</name>
-          <state>Default	None</state>
+          <state>STM32F303VC	ST STM32F303VC</state>
         </option>
         <option>
           <name>FPU2</name>
           <version>0</version>
-          <state>0</state>
+          <state>4</state>
         </option>
         <option>
           <name>NrRegs</name>
           <version>0</version>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>NEON</name>
@@ -346,7 +346,7 @@
         <option>
           <name>CCOptStrategy</name>
           <version>0</version>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCOptLevelSlave</name>
@@ -396,7 +396,7 @@
         </option>
         <option>
           <name>IccRTTI</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IccStaticDestr</name>
@@ -421,7 +421,7 @@
         <option>
           <name>CCOptStrategySlave</name>
           <version>0</version>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCGuardCalls</name>
@@ -613,7 +613,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>usb-F3.srec</state>
+          <state>Project.srec</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -991,7 +991,7 @@
         <name>$PROJ_DIR$\..\Src\usb_device.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Src\usb_keyboard.h</name>
+        <name>$PROJ_DIR$\..\Inc\usb_keyboard.h</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Src\usbd_conf.c</name>
@@ -1058,6 +1058,12 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_uart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_uart_ex.c</name>
       </file>
     </group>
   </group>
