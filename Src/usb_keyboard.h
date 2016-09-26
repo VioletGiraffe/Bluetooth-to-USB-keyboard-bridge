@@ -2,12 +2,12 @@
 #include "usb_device.h"
 #include "usbd_hid.h"
 
-// Modifier + reserved + 6 keys + ???
-#define USB_HID_KB_REPORT_SIZE 9
-static uint8_t report[USB_HID_KB_REPORT_SIZE];
-
 inline void USB_Send_Key_Press(uint8_t scanCode, uint8_t modifier)
 {  
+  // Modifier + reserved + 6 keys + ???
+  #define USB_HID_KB_REPORT_SIZE 9
+  static uint8_t report[USB_HID_KB_REPORT_SIZE];
+  
   for (uint32_t i = 0; i < USB_HID_KB_REPORT_SIZE; ++i)
     report[i] = 0;
   
